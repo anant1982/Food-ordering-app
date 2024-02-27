@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.home-main-wrapper {
+		margin-left: calc(10% + 36px);
+		margin-right: calc(10% + 36px);
+	}
+	.veg-active .vegOnly-btn-toggle-bar {
+		background-color: rgb(0, 128, 0);
+	}
+	.veg-active .vegOnly-btn-toggle-thumb {
+		border-color: rgb(0, 128, 0);
+		-webkit-transform: translate3d(18px, 0, 0);
+		transform: translate3d(18px, 0, 0);
+	}
+	.veg-active .vegOnly-btn-toggle-thumb__content {
+		opacity: 1;
+	}
+	.browse-menu-btn-closed {
+		transform: translate3d(0, 132px, 0);
+	}
+	.browse-menu-btn-closed.open {
+		transform: translate3d(0, -124px, 0);
+	}
+}
+@layer utilities {
+	.menu-item-first {
+		@apply border-t-0 pt-0 mt-5 !important;
+	}
+}
